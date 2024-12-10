@@ -1,0 +1,148 @@
+.carousel_container{
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.slider-container{
+    position: relative;
+    width: 100%;
+}
+
+.slide1, .slide2, .slide3{
+    position: relative;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container img,.image-container img,.image-container img{
+    width: 100%;
+    height: 900px;
+    object-fit: cover; 
+    display: block;
+}
+
+.image-container .image-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    pointer-events: none; 
+}
+
+.infos{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+.infos h2{
+    font-size: clamp(2rem, 4vw - 1rem, 4rem);
+    font-family: "Cormorant Garamond", serif;
+    color: white;
+    position: relative;
+    
+}
+.infos p{
+    font-size: clamp(.9rem, 1.2vw, 2rem);
+    color: white;
+    position: relative;
+}
+
+/* les modifications dans le button prev et next dans le carousel */
+
+.slick-prev{
+    left: 1rem;
+    width: 2rem !important;
+    height: 3rem !important;
+    z-index: 999;
+}
+.slick-next {
+    right: 1rem;
+    width: 2rem !important;
+    height: 3rem !important;
+    z-index: 999;
+}
+
+
+
+.slick-next:before {
+    content: '';
+    display: block; /* Ensure the element is rendered */
+    width: 35px; /* Adjust size as needed */
+    height: 35px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" color="white" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.slick-prev:before {
+    content: '';
+    display: block; /* Ensure the element is rendered */
+    width: 35px; /* Adjust size as needed */
+    height: 35px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" color="white" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width : 50em){
+    .slick-next:before {
+        display: none;
+        
+    }
+
+    .slick-prev:before {
+        display: none;
+    }
+    
+}
+
+
+.slick-dots {
+    position: absolute;
+    bottom: 15px;
+    z-index: 999;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 1rem;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white;
+}

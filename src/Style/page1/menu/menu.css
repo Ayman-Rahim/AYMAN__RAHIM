@@ -1,0 +1,39 @@
+.rs-drawer-body{
+    padding: 1.5rem !important; 
+}
+
+
+.Menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.Menu li a{
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .4s;
+}
+.Menu li a:hover{
+    color: rgb(179, 179, 179);
+    
+}
+
+@media (max-width : 50em) {
+    /* .rs-drawer-content{
+        width: 80% !important;
+    } */
+
+    /* .rs-drawer-dialog {
+        width: 80% !important;
+    } */
+
+    .rs-drawer-left.rs-drawer-xs, .rs-drawer-right.rs-drawer-xs {
+        /* width: 401px; */
+        width: min(401px, 80%);
+    }
+}

@@ -1,0 +1,39 @@
+.container_carousel_about{
+    width: 100%;
+    padding: 10rem 0;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+}
+
+.content_about{
+    width: min(1300px, 100% - 1rem);
+    padding: 15rem 0;
+    
+}
+.content_about .carousel_about_infos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    
+}
+
+
+.content_about .carousel_about_infos h1{
+    font-size: clamp(3rem, 4vw + 1rem, 4.2rem);
+    font-family: "Cormorant Garamond", serif;
+}
+.content_about .carousel_about_infos p{
+    font-size: clamp(.4rem, 2vw + 1rem, 1.5rem);
+    /* width: 50%; */
+}
+
+@media (max-width : 50em) {
+    .content_about .carousel_about_infos h1{
+        text-align: center;
+    }
+    .content_about .carousel_about_infos p{
+        text-align: center;
+    }
+}

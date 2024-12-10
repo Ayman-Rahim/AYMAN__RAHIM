@@ -1,0 +1,36 @@
+.container_contact{
+    width: 100%;
+    display: flex;
+    padding: 5rem 0rem;
+    justify-content: center;
+}
+
+.contact{
+    background-color: #e6e6e6;
+    width: 100%;
+    padding: 5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact p{
+    z-index: 5;
+    font-size: clamp(1.5rem, 1.6vw + 1rem, 1.5rem);
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+}
+.contact p span{
+    position: relative;
+    z-index: 3;
+}
+.contact p span::before{
+    content: '';
+    position: absolute;
+    margin-top: 1rem;
+    width: 100%;
+    z-index: 1;
+    height: 1rem;
+    background-color: blue;
+    opacity: 0.3;
+}

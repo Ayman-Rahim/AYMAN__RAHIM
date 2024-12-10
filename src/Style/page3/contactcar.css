@@ -1,0 +1,39 @@
+.container_contact_carousel{
+    width: 100%;
+    padding: 10rem 0;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+}
+
+.content_contact{
+    width: min(1300px, 100% - 1rem);
+    padding: 15rem 0;
+    
+}
+.content_contact .carousel_contact_infos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    
+}
+
+
+.content_contact .carousel_contact_infos h1{
+    font-size: clamp(3rem, 4vw + 1rem, 4.2rem);
+    font-family: "Cormorant Garamond", serif;
+}
+.content_contact .carousel_contact_infos p{
+    font-size: clamp(.4rem, 2vw + 1rem, 1.5rem);
+    /* width: 50%; */
+}
+
+@media (max-width : 50em) {
+    .content_contact .carousel_contact_infos h1{
+        text-align: center;
+    }
+    .content_contact .carousel_contact_infos p{
+        text-align: center;
+    }
+}

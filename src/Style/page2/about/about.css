@@ -1,0 +1,74 @@
+.container_about{
+    width: 100%;
+    padding: 10rem 0rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.content_about_infos{
+    width: min(1300px, 100% - 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    overflow: hidden;
+}
+.content_about_infos h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2rem, 2.5vw + 1rem, 4rem);
+}
+
+.about_infos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.about_title{
+    flex-basis: 20rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_title h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2rem, 1.5vw + 1rem, 3rem);
+}
+
+.about_txt{
+    flex-basis: 25rem;
+    
+}
+.about_txt p{
+    font-size: clamp(.9rem, 1vw + 1rem, 1.1rem);
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.about_img{
+    display: flex;
+    /* height: 50em; */
+}
+
+.about_img img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media (max-width : 50em) {
+    .about_txt{
+        text-align: center;
+        flex-grow: 1;
+        
+    }
+
+    .about_title{
+        flex-grow: 1;
+    }
+}
+

@@ -1,0 +1,118 @@
+.container_article2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.container_article2 .contentt{
+    width: min(1300px, 100% - 1rem);
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* @media (min-width : 75em) {
+    
+    .container_article2 .contentt{
+        width: min(1300px, 100% - 1rem);
+        display: flex;
+        flex-flow: column-reverse;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+} */
+
+.side_images{
+    display: flex;
+    position: relative;
+    flex-basis: 60em;
+    flex-grow: 1;
+    height: clamp(31rem, 70vw + 12rem, 50rem);
+}
+
+.side_images .child1, .side_images .child1{
+    position: absolute;
+}
+
+.side_images .child1{
+    
+    height: 25rem;
+    max-width: 50%;
+    right: 0;
+    top: 10rem;
+    flex-grow: 1;
+    z-index: 9;
+}
+
+
+
+
+
+.side_images .child2{
+    left: 8rem;
+    /* top: 2rem; */
+    height: auto;
+    max-width: 80%;
+    flex-grow: 1;
+}
+
+
+.side_description{
+    flex-basis: 30em;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    /* align-items: center; */
+}
+.side_description h2{
+    font-size: clamp(3rem, 4vw, 4rem);
+    line-height: clamp(3rem, 5vw, 5.5rem);
+    font-family: "Cormorant Garamond", serif;
+    text-align: left;
+    
+}
+
+.side_description p{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width : 50em) {
+    .container_article2 .contentt{
+        width: min(1300px, 100% - 1rem);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .side_images{
+        display: flex;
+        position: relative;
+        flex-basis: 38em;
+        flex-grow: 1;
+        height: clamp(31rem, 70vw + 12rem, 50rem);
+    }
+
+    .side_images .child1{
+    
+        height: 15rem;
+        max-width: 50%;
+        right: 0;
+        top: 7rem;
+        flex-grow: 1;
+        z-index: 9;
+    }
+
+    .side_images .child2{
+        left: 8rem;
+        /* top: 2rem; */
+        height: auto;
+        max-width: 80%;
+        flex-grow: 1;
+    }
+}
+

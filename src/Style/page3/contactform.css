@@ -1,0 +1,126 @@
+.container_contact_form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0rem;
+    overflow: hidden;
+}
+
+.contact_form{
+    width: min(1300px, 100% - 1rem);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* @media (max-width : 70em) {
+    .contact_form{
+        width: min(1300px, 100% - 1rem);
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+} */
+
+.formulaire_inputs{
+    flex-basis: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+    
+}
+.formulaire_inputs h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2rem, 3vw + 1rem, 3rem);
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.nom_input, .email_input, .sujet_input, .message_input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.container_contact_form input{
+    padding: .5rem .5rem;
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.5);
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+.container_contact_form button{
+    padding: 1rem 3rem;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+}
+
+textarea{
+    outline: none;
+}
+
+
+/* part2 */
+
+.contact_form_infos{
+    flex-basis: 25em;
+    
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    gap: 2rem;
+}
+
+@media (max-width : 70em) {
+    .contact_form_infos{
+        flex-basis: 40em;
+    }
+}
+
+.email, .telephone, .adress, .social_media{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact_form_infos h4, .social_media h4{
+    font-size: clamp(0.6rem, 1vw + 1rem, .9rem);
+    color: rgb(192, 191, 191);
+}
+
+.contact_form_infos a{
+    font-size: clamp(1.1rem, 1.8vw + 1rem, 1.9rem);
+    font-family: "Cormorant Garamond", serif;
+}
+.contact_form_infos p{
+    font-size: clamp(1rem, 1.5vw + 1rem, 1.7rem);
+    font-family: "Cormorant Garamond", serif;
+}
+
+.container_media a{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+}
+.container_media {
+    display: flex;
+    gap: .5rem;
+}
+.container_media a svg{
+    color: white;
+}

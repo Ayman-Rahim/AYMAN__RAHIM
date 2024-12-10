@@ -1,0 +1,153 @@
+.container_nav{
+    width: 100%;
+    position: fixed;
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    transition: .4s;
+    z-index: 99;
+}
+
+.container_nav.sticky {
+    padding: .5rem 0;
+    background-color: white;
+    transition: .4s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+
+nav{
+    width: min(1300px, 100% - 1rem);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.list_nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.list_nav li{
+    color: white;
+}
+.list_nav li a{
+    font-size: clamp(.7rem, 1.3vw, .8rem);
+    color: white;
+    font-family: "Roboto, sans-serif";
+    text-decoration: none;
+    transition: .4s;
+}
+
+.active-link{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    color : black !important;
+}
+
+.active-link li{
+    color : black !important;
+}
+.active-link li a{
+    font-size: clamp(.7rem, 1.3vw, .8rem);
+    color : black !important;
+    font-family: "Roboto, sans-serif";
+    text-decoration: none;
+    transition: .4s;
+}
+
+.active-link li a:hover{
+    color: rgb(201, 201, 201);
+}
+.list_nav li a:hover{
+    color: rgb(201, 201, 201);
+}
+
+.list_nav li a.stiky{
+    color: black;
+}
+
+
+.list_social_media{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+@media (max-width : 50em) {
+    .list_social_media{
+        display: none;
+    }
+
+    .list_nav, .active-link{
+        display: none;
+    }
+}
+
+.list_social_media li a{
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.list_social_media li a.st{
+    background-color: black;
+    
+}
+
+.list_social_media li a svg{
+    width: 1.2rem;
+    height: 1.2rem;
+    color: black;
+}
+.list_social_media li a svg.svgsticy{
+    
+    color: white;
+}
+
+@media (max-width : 50em) {
+    .menu{
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+    .svgg{
+        color: black !important;
+    }
+    
+    .menu svg{
+        width: 2rem;
+        height: 2rem;
+        color: white;
+    }
+
+    .menu svg.stcky{
+        color: black;
+    }
+    
+}
+
+.menu, .menuu{
+    display: none;
+}
+

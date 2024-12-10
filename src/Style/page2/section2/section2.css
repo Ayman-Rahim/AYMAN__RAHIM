@@ -1,0 +1,89 @@
+.container_section2{
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section2{
+    /* width: min(1300px, 100% - 1rem); */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+
+.section2_img, .section2_all_infos{
+    flex-basis: 30em;
+    display: flex;
+    flex-grow: .4;
+}
+
+
+.section2_all_infos{
+    gap: 4rem;
+}
+
+.section2_img img{
+    max-width: 100%;
+}
+
+.section2_all_infos .section2_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.section2_all_infos .section2_content h3{
+    font-family: "Cormorant Garamond", serif;
+}
+
+.section2_all_infos .section2_content p{
+    font-size: clamp(.9rem, 1vw + 1rem, 1.1rem);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.section_moreinfos{
+    padding-top: 4rem;
+}
+.section_moreinfos p{
+    font-size: clamp(.9rem, 1vw + 1rem, 1.1rem);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media (max-width : 70em) {
+
+    
+    .section2_all_infos{
+        flex-direction: column;
+    }
+
+    .section2{
+        /* width: min(1300px, 100% - 1rem); */
+        width: 100%;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+    
+    
+    .section_moreinfos{
+        padding-top: 0rem !important;
+    }
+
+    .section2_all_infos{
+        gap: 2rem;
+    }
+
+    .section2_img, .section2_all_infos{
+        text-align: center;
+        flex-grow: 1 !important;
+    }
+}
+
