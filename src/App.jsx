@@ -34,6 +34,7 @@ function App() {
     <div className="app">
         <BrowserRouter>
           <ScrollToTop />
+          
           <Nav />
           <Routes>
             <Route path="/" element={<Navigate to="/Accueil" />} />

@@ -1,11 +1,7 @@
 import React from 'react'
+import '../../Style/page1/menu/menu.css'
 import 'rsuite/dist/rsuite.min.css';
 import { Drawer} from 'rsuite';
-// import AngleRightIcon from '@rsuite/icons/legacy/AngleRight';
-// import AngleLeftIcon from '@rsuite/icons/legacy/AngleLeft';
-// import AngleDownIcon from '@rsuite/icons/legacy/AngleDown';
-// import AngleUpIcon from '@rsuite/icons/legacy/AngleUp';
-import '../../Style/page1/menu/menu.css'
 import { Link } from 'react-router-dom';
 
 
