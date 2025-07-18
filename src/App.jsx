@@ -1,6 +1,6 @@
 import React, { lazy, Suspense, useEffect } from 'react';
 import './Style/app/app.css';
-import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
 import { LoadingOutlined } from '@ant-design/icons';
 import { Flex, Spin } from 'antd';
 import { useLocation } from "react-router-dom";
@@ -32,7 +32,7 @@ function App() {
   // }, [pathname]);
   return (
     <div className="app">
-        <BrowserRouter>
+        <HashRouter>
           <ScrollToTop />
           
           <Nav />
@@ -76,7 +76,7 @@ function App() {
           </Routes>
           
         
-        </BrowserRouter>
+        </HashRouter>
     </div>
   )
 }
