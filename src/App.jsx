@@ -29,7 +29,7 @@ function App() {
   // }, [pathname]);
   return (
     <div className="app">
-        <HashRouter basename="/AYMAN__RAHIM">
+        <HashRouter basename="/Accueil#home">
           <ScrollToTop />
           
           <Nav />
