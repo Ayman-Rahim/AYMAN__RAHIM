@@ -1,7 +1,28 @@
 .rs-drawer-body{
     padding: 1.5rem !important; 
+    background-color: black;
 }
 
+
+.rs-drawer-header {
+    background-color: black;
+}
+
+.rs-drawer-title{
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.rs-drawer-header .rs-drawer-header-close {
+    color: white;
+}
+
+.rs-btn-subtle:focus, .rs-btn-subtle:hover {
+    background-color: transparent !important;
+    background-color: var(--rs-btn-subtle-hover-bg);
+    color: greenyellow !important;
+    color: var(--rs-btn-subtle-hover-text);
+}
 
 .Menu{
     padding: 0;
@@ -13,13 +34,13 @@
 }
 
 .Menu li a{
-    color: black;
-    font-weight: 400;
+    color: white;
+    font-weight: bold;
     text-decoration: none;
     transition: .4s;
 }
 .Menu li a:hover{
-    color: rgb(179, 179, 179);
+    color: greenyellow;
     
 }
 

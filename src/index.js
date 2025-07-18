@@ -9,7 +9,20 @@ const App = lazy(() => import('./App'))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Suspense fallback={<Spin size="large" />}>
+  <Suspense
+    fallback={
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '100vh', // Full height of viewport
+        }}
+      >
+        <Spin size="large" />
+      </div>
+    }
+  >
     <React.StrictMode>
       <App />
     </React.StrictMode>

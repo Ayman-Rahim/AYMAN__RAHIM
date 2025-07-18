@@ -19,21 +19,20 @@ function Article1() {
   return (
     <div ref={container} className="container_article1">
         <div className="content">
-            <motion.h2 style={{ y : xl,opacity : opacity, transition : '.8s' }}>Que Pouvons-Nous <br /> Automatise ?</motion.h2>
+            <motion.h2 style={{ y : xl,opacity : opacity, transition : '.8s' }}>About Me</motion.h2>
             <div className='content_infos'>
-                <div className="content_img">
+                {/* <div className="content_img">
                     <motion.img style={{ x : xll, transition : '.8s' }} className='im1' src={room1} />
                     <motion.img style={{ x : xlll, transition : '.8s' }} className='im2' src={room2} />
-                </div>
+                </div> */}
                 <div className="content_discription">
-                    <motion.h2 style={{ opacity : opacity, y : xl, transition : '1s' }}>Résidentiel</motion.h2>
+                    {/* <motion.h2 style={{ opacity : opacity, y : xl, transition : '1s' }}>Résidentiel</motion.h2> */}
                     <motion.p style={{ opacity : opacity, y : xl_l , transition : '1s'}}>
-                        AV PLUS est une entreprise leader spécialisée
-                        dans les solutions audio/vidéo, la domotique
-                        et la conception de salles de cinéma privées.
-                        Nous offrons des services personnalisés,
-                        des équipements de haute qualité et un service
-                        client attentif pour répondre aux besoins uniques de chaque projet. Avec notre expertise, nous transformons les espaces résidentiels et commerciaux en environnements immersifs et intelligents, en fournissant des technologies de pointe pour améliorer le confort, la sécurité et le divertissement. Notre engagement envers l'innovation et la satisfaction client fait de nous votre partenaire de confiance pour créer des solutions audio/vidéo de qualité supérieure et des maisons intelligentes de premier ordre
+                    I’m a passionate game developer and 3D asset creator focused on building immersive, stylized, and performance-optimized 
+                    content for video games. I specialize in modeling environments, characters, and props using Blender 
+                    and integrate them into game engines like Unreal Engine. With a strong eye for design and gameplay experience, I aim to create
+                     assets that not only look great but also serve gameplay and performance goals. Whether it’s for horror, survival, or stylized
+                      adventure games, I love bringing interactive worlds to life from concept to playable experience.
                     </motion.p>
                 </div>
             </div>

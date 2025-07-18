@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import cenima from '../../Assets/article3/cenima.jpg'
-import cen from '../../Assets/article3/cen.jpg'
+import cenima from '../../Assets/article3/im2.jpg'
+import cen from '../../Assets/article3/im1.jpg'
 import '../../Style/page1/article3/article3.css'
 import { motion, useTransform, useScroll } from 'framer-motion'
 
@@ -30,19 +30,9 @@ function Article3() {
                 <motion.img style={{ x : xlll, transition : '.8s' }} className='im1' src={cenima} />
             </div>
             <div className="side_description">
-                <motion.h2 style={{ opacity : opacity, y : xl, transition : '1s' }}>Salle de cinéma privé</motion.h2>
+                <motion.h2 style={{ opacity : opacity, y : xl, transition : '1s' }}>A Living Room Interior For A House</motion.h2>
                 <motion.p style={{ opacity : opacity, y : xl_l , transition : '1s'}}>
-                    AV PLUS est une entreprise leader spécialisée
-                    dans les solutions audio/vidéo, la domotique
-                    et la conception de salles de cinéma privées.
-                    Nous offrons des services personnalisés,
-                    AV PLUS est une entreprise leader spécialisée
-                    dans les solutions audio/vidéo, la domotique
-                    et la conception de salles de cinéma privées.
-                    Nous offrons des services personnalisés,AV PLUS est une entreprise leader spécialisée
-                    dans les solutions audio/vidéo, la domotique
-                    et la conception de salles de cinéma privées.
-                    Nous offrons des services personnalisés,
+                
                 </motion.p>
             </div>
         </div>

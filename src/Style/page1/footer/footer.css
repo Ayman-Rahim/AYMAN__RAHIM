@@ -5,6 +5,7 @@
     align-items: center;
     padding: 5rem 0rem;
     gap: 2rem;
+    background-color: black;
 }
 
 
@@ -33,7 +34,7 @@
     font-size: clamp(1.3rem, 1.2vw + 1rem, 1.2rem);
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .cl5{
@@ -58,7 +59,7 @@
 }
 .footer ul li{
     
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
 }
 
 .container_form{
@@ -92,6 +93,7 @@
 
 .copyright p{
     flex-basis: 30rem;
+    color: white;
 }
 .copyright .list_social_mediaa{
     flex-basis: 30rem;
@@ -108,7 +110,7 @@
 }
 
 .list_social_mediaa li a{
-    background-color: black;
+    background-color: white;
     width: 2rem;
     height: 2rem;
     display: flex;
@@ -124,11 +126,11 @@
 .list_social_mediaa li a svg{
     width: 1.2rem;
     height: 1.2rem;
-    color: white;
+    color: black;
 }
 
 
 .cl2 li a{
-    color: rgba(0, 0, 0, 0.5);
+    color: white;
     text-decoration: none;
 }

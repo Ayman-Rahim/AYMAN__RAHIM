@@ -1,0 +1,87 @@
+.container_carousell{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container_carousell .carousel{
+    width: min(1300px, 100% - 1rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0;
+    gap: 4rem;
+}
+
+@media (max-width: 50rem) {
+    .container_carousell .carousel{
+        gap: 4rem;
+    }
+    
+}
+
+.container_carousell .carousel .side_static_img{
+    flex-basis: 30rem;
+    border-radius: 60%;
+    overflow: hidden;
+    
+}
+
+
+@media (max-width: 50rem) {
+    .container_carousell .carousel .side_static_img{
+        border-radius: 0rem !important;
+    }
+}
+.container_carousell .carousel .side_static_img img{
+    height: 30rem;
+}
+
+.carousel .side_static_description{
+    flex-basis: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.carousel .side_static_description h2{
+    width: 100%;
+    font-family: "arial", sans-serif;
+    font-size: clamp(2rem, 4vw - 1rem, 4rem);
+    line-height: normal !important;
+    color: white;
+}
+.carousel .side_static_description h5{
+    width: 100%;
+    font-family: "arial", sans-serif;
+    font-size: clamp(1rem, 2vw - 1rem, 2rem);
+    font-weight: bold;
+    background: linear-gradient(
+        90deg,
+        rgb(163, 43, 255),  
+        rgb(234, 76, 137),  
+        rgb(255, 106, 193), 
+        rgb(17, 188, 230),  
+        rgb(7, 185, 231),   
+        rgb(2, 2, 4)        
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: textScroll 8s linear infinite;
+}
+
+
+
+.carousel .side_static_description .desc_static{
+    width: 100%;
+    font-family: "arial", sans-serif;
+    font-size: clamp(.8rem, 1vw - 1rem, 1.2rem);
+    font-weight: normal;
+    color: white !important;
+    margin: 0;
+}

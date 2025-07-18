@@ -3,21 +3,46 @@
     display: flex;
     padding: 5rem 0rem;
     justify-content: center;
+    background-color: black;
 }
 
 .contact{
-    background-color: #e6e6e6;
+    
     width: 100%;
     padding: 5rem 0rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
+    background: linear-gradient(
+        135deg,
+        rgb(7, 185, 231),    /* neon blue */
+        rgb(13, 183, 229),
+        rgb(15, 179, 238),
+        rgb(101, 31, 255),   /* violet */
+        rgb(163, 43, 255),   /* purple */
+        rgb(234, 76, 137),   /* pink */  /* hot pink */
+        rgb(2, 2, 4)         /* dark base */
+    );
+    
+    background-size: 400% 400%;
+    animation: gradientFlow 15s ease infinite;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .contact p{
     z-index: 5;
     font-size: clamp(1.5rem, 1.6vw + 1rem, 1.5rem);
-    font-family: "Cormorant Garamond", serif;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     text-align: center;
 }
 .contact p span{
@@ -33,4 +58,30 @@
     height: 1rem;
     background-color: blue;
     opacity: 0.3;
+}
+
+
+.list_social_media_contact{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.list_social_media_contact li a{
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.list_social_media_contact li a svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    color: black;
 }

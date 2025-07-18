@@ -69,10 +69,38 @@ nav{
 }
 
 .active-link li a:hover{
-    color: rgb(201, 201, 201);
+    background: linear-gradient(
+        90deg,
+        rgb(163, 43, 255),  
+        rgb(234, 76, 137),  
+        rgb(255, 106, 193), 
+        rgb(17, 188, 230),  
+        rgb(7, 185, 231),   
+        rgb(2, 2, 4)        
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    
 }
 .list_nav li a:hover{
-    color: rgb(201, 201, 201);
+    background: linear-gradient(
+        90deg,
+        rgb(17, 188, 230),  
+        rgb(163, 43, 255),  
+        rgb(234, 76, 137),  
+        rgb(255, 106, 193), 
+        rgb(7, 185, 231),   
+        rgb(2, 2, 4)        
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    
 }
 
 .list_nav li a.stiky{
